@@ -1,0 +1,26 @@
+{%extends "base.html"%}
+
+{%block head%}
+    <title>Sign Up</title>
+{%endblock%}
+
+{%block body%}
+    <h1>Sign Up</h1>
+    <form action="/signup"  method="POST">
+        <div class="form-group">
+
+            <div class="usrin d-block">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username">
+            </div>
+
+            <div class="pwdin d-block">
+                <label for="password">Password</label>
+                <input type="text" name="password" id="password">
+            </div>
+
+            <button class="btn btn-primary" type="submit">Sign Up</button>
+            <a role="button" class="btn btn-outline-primary" href="/">Cancel</a>
+        </div>
+    </form>
+{%endblock%}
